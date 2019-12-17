@@ -51,52 +51,11 @@
           <div class="row">
             <div class="col-12">
               <h3 class="section-heading uppercase">
-                Personal Info
+                Conferences And Meetups Attended
               </h3>
             </div>
           </div>
-          <div class="personal-info-item">
-            <div class="key">
-              <p class="uppercase">
-                Name:
-              </p>
-            </div>
-            <div class="value">
-              <p>Rosie Odenkirk</p>
-            </div>
-          </div>
-          <div class="personal-info-item">
-            <div class="key">
-              <p class="uppercase">
-                Address:
-              </p>
-            </div>
-            <div class="value">
-              <p>17 Riverdale Catskills NY USA</p>
-            </div>
-          </div>
-          <div class="personal-info-item">
-            <div class="key">
-              <p class="uppercase">
-                Phone:
-              </p>
-            </div>
-            <div class="value">
-              <p>
-                555 289 5909
-              </p>
-            </div>
-          </div>
-          <div class="personal-info-item">
-            <div class="key">
-              <p class="uppercase">
-                E-mail address:
-              </p>
-            </div>
-            <div class="value">
-              <p>rosi@xmj.com</p>
-            </div>
-          </div>
+          <div id="map"></div>
         </div>
         <div class="col-md-8 bg-color-three-reasons ">
           <div class="row">
@@ -214,11 +173,24 @@
         </div>
       </div>
     </footer>
-    <script>
-      var APIkey = "AIzaSyA05-L2g07oTMin8lObI7iMyS4Zmr2KNU4
-";
 
+    <script>
+      function initMap () {
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 3,
+          center: {
+            lat: 46.619261,
+            lng: -33.134766
+          }
+        });
+      }
     </script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA05-L2g07oTMin8lObI7iMyS4Zmr2KNU4
+                 &callback=initMap"></script>
+
   </body>
 
 </html>
