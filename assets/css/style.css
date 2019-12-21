@@ -135,9 +135,7 @@ header{
   letter-spacing: 2px;
 }
 
-#map {
-  min-height: 360px;
-}
+
 /*----------------------------------------hover*/
 .hvr-sweep-to-bottom:before{
   background-color: rgba(0,0,0,0.2);
@@ -308,6 +306,11 @@ button[type="submit"]{
   background-color: #e84610;
 }
 
+/*----------------------------------------Map*/
+
+div#map {
+  min-height: 360px;
+}
 /*----------------------------------------Media Query*/
 
 @media(min-width: 992px){
