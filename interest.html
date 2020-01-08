@@ -27,19 +27,22 @@
           <div class='row no-gutters'>
             <div class='col'>
               <ul id='nav' class='list-inline menucontainer'>
-                <li class='col-6 col-sm-3 ui-menu-color-home list-inline-item menuitem'>
+                <li class='col-6 col-sm-2 ui-menu-color-home list-inline-item menuitem'>
                   <a href='index.html' class="hvr-sweep-to-bottom"><i class='fa fa-home' aria-hidden='true'></i><span>Home</span></a>
                 </li>
-                <li class='col-6 col-sm-3 ui-menu-color-resume list-inline-item menuitem'>
+                <li class='col-6 col-sm-2 ui-menu-color-resume list-inline-item menuitem'>
                   <a href='resume.html' class="hvr-sweep-to-bottom"><i class='fa fa-graduation-cap' aria-hidden='true'></i><span>Resume</span></a>
                 </li>
-                <li class='col-6 col-sm-3 ui-menu-color-contact list-inline-item menuitem'>
+                       <li class='col-6 col-sm-2 ui-menu-color-interest list-inline-item menuitem'>
+                  <a href='interest.html' class="hvr-sweep-to-bottom"><i class='fa fa-users' aria-hidden='true'></i><span>Interest</span></a>
+                </li>
+                   <li class='col-6 col-sm-2 ui-menu-color-github list-inline-item menuitem'>
+                  <a href='github.html' class="hvr-sweep-to-bottom"><i class='fa fa-github' aria-hidden='true'></i><span>GitHub</span></a>
+                </li>
+                <li class='col-6 col-sm-2 ui-menu-color-contact list-inline-item menuitem'>
                   <a href='contact.html' class="hvr-sweep-to-bottom"><i class='fa fa-comment-o' aria-hidden='true'></i><span>Contact</span></a>
                 </li>
-                <li class='col-6 col-sm-3 ui-menu-color-interest list-inline-item menuitem'>
-                  <a href='contact.html' class="hvr-sweep-to-bottom"><i class='fa fa-comment-o' aria-hidden='true'></i><span>Interest</span></a>
-                </li>
-                <li class='col-6 col-sm-3 ui-menu-color-download list-inline-item menuitem'>
+                <li class='col-6 col-sm-2 ui-menu-color-download list-inline-item menuitem'>
                   <a href='assets/cv/sample-cv%20(1).pdf' target="_blank" class="hvr-sweep-to-bottom"><i class='fa fa-download' aria-hidden='true'></i><span>Download</span></a>
                 </li>
               </ul>
@@ -50,10 +53,10 @@
     </header>
     <section class="container-fluid"> 
       <div class="row">  
-        <div class="col-md-4 bg-color-personal-info section-column">
+        <div class="col-md-4 bg-color-interest section-column">
           <div class="row">
             <div class="col-12">
-              <h3 class="section-heading uppercase">
+              <h3 class="interest-heading uppercase">
                 Conferences And Meetups Attended
               </h3>
             </div>
@@ -70,11 +73,11 @@
             <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
               <div class="row">
                 <div class="col-2">
-                  <i class="three-reasons-icon fa fa-question" aria-hidden="true"></i>
+                  <i class="three-reasons-icon fa fa-users" aria-hidden="true"></i>
                 </div>
                 <div class="col-10">
                   <h4 class="three-reasons-heading uppercase">
-                    What do I do?
+                    Coding!
                   </h4>
                   <p>
                     It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.
@@ -85,7 +88,7 @@
             <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
               <div class="row">
                 <div class="col-2">
-                  <i class="three-reasons-icon fa fa-thumbs-up" aria-hidden="true"></i>
+                  <i class="three-reasons-icon fa fa-users" aria-hidden="true"></i>
                 </div>
                 <div class="col-10">
                   <h4 class="three-reasons-heading uppercase">
@@ -100,7 +103,7 @@
             <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
               <div class="row">
                 <div class="col-2">
-                  <i class="three-reasons-icon fa fa-bolt" aria-hidden="true"></i>
+                  <i class="three-reasons-icon fa fa-users" aria-hidden="true"></i>
                 </div>
                 <div class="col-10">
                   <h4 class="three-reasons-heading uppercase">Why hire me?</h4>
@@ -176,22 +179,11 @@
         </div>
       </div>
     </footer>
-
-    <script>
-      function initMap() {
-        var map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 3,
-          center: {
-            lat: 46.619261,
-            lng: -33.134766
-          }
-        });
-      }
-    </script>
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
     </script>
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTl_KbRLhkJCHXhk3hD16IPLUEPPGNB1Q&callback=initMap"></script>
+    <script src="assets/js/maps.js"></script>
 
   </body>
 
